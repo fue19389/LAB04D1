@@ -18,7 +18,8 @@ module testbench();
 
   initial begin
     #1
-    $display("Ejercicios 1.1, 1.2, 2.2, 2.4");
+    $display("\n");
+    $display("Tablas 1.1, 1.2, 2.2 y 2.4");
     $display("A B C | Y1 Y2 Y6 Y8");
     $display("------|------");
     $monitor("%b %b %b | %b %b %b %b", b1, b2, b3, s1, s2, s6, s8);
@@ -34,8 +35,8 @@ module testbench();
 
   initial begin
     #9
-    $display("\n")
-    $display("Ejercicios 1.3, 1.4, 2.1, 2.3");
+    $display("\n");
+    $display("Tablas 1.3, 1.4, 2.1, 2.3");
     $display("A B C D | Y3 Y4 Y5 Y7");
     $display("--------|------------");
     $monitor("%b %b %b %b | %b %b %b %b", b1, b2, b3, b4, s3, s4, s5, s7);
@@ -58,7 +59,7 @@ module testbench();
   end
 
   initial
-    #22 $finish;
+    #30 $finish;
 
   initial begin
     $dumpfile("plab4_tb.vcd");

@@ -61,7 +61,7 @@ module ejer7(input wire A, B, C, D, output wire Y7);
 
   not (nelC, C);
   and (w1, A, D);
-  and (w2, nelC, B);
+  and (w2, nelC, D);
   or  (Y7, B, w1, w2);
 
 endmodule
@@ -70,10 +70,10 @@ endmodule
 
 module ejer8(input wire A, B, C, output wire Y8);
 
-  wire c1, c2, nA, nC;
+  wire c1, nA, nC;
   not (nA, A);
   not (nC, C);
   and (c1, nA, nC);
-  or  (c2, c1, B);
+  or  (Y8, c1, B);
 
 endmodule
