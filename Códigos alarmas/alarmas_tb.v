@@ -31,4 +31,12 @@ module testbench();
     #1 t1 = 1; t2 = 1; t3 = 1;
   end
 
-  
+  initial
+    #20 $finish;
+
+  initial begin
+    $dumpfile("alarmas_tb.vcd")
+    $dumpvars(0, testbench);
+  end
+
+endmodule
